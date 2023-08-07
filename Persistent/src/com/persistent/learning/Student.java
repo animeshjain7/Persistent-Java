@@ -8,10 +8,13 @@ public class Student {
 	
 	//Constructor
 	public Student(String name,int age,String address) {
+		// this,name refers to the class member and simple 'name' means function parameter  
 		this.name = name;
 		this.age = age;
 		this.address = address;
 	}
+	
+	
 	//Setter functions
 	 public void setName(String name) {
 		 this.name = name;
@@ -22,6 +25,7 @@ public class Student {
 	 public void setAddress(String address) {
 		 this.address = address;
 	 }
+	 
 	 
 	 //Getter functions
 	public String getName() {
@@ -34,10 +38,15 @@ public class Student {
 		return this.address ;
 	}
 	
+	
+	
+	//main function
 	public static void main(String[] args) {
 		Student s1 = new Student("Animesh" , 19 , "Home");
-		String a = s1.getName();
-		System.out.println(a);
+		System.out.println(s1.getName());
+		System.out.println(s1.getAge());
+		System.out.println(s1.getAddress());
+		
 	}
 
 }
